@@ -17,8 +17,8 @@ def valid(a,b,d):
       if i.title is not None:
         if b not in i.title or b == "" or b == " ":
           text += i.title if i.title != "" or i.title != " " else "aucune description trouvée ;("
-        else:
-          text += "aucune description trouvée ;("
+      else:
+        text += "aucune description trouvée ;("
         text += "  :  "
         text2 += "~"
         text2 += i.link
