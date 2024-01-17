@@ -8,7 +8,7 @@ try:
 except Exception:
   write(inspect.signature(Search.__init__).parameters)
   
-write(Search.args)
+
 def valid(a,b,d):
   try:
     import textwrap
