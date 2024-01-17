@@ -23,10 +23,10 @@ ban_words = st.text_area("entrez les mots ne devant pas figurer dans les recherc
 st.button("quelque chose de fun .", on_click=lambda:st.balloons())
 st.button("autre chose de fun .", on_click=lambda:st.snow())
 st.button("derniere chose de fun .", on_click=lambda:b())
-
+x = st.button("entrez .")
 st2 = st.container()
 
-if st.button("entrez ."):
+if x:
   for i in valid(mots, ban_words, number).split("+++++++"):
       st2.write(i)
 
