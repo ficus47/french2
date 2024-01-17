@@ -1,7 +1,7 @@
 from streamlit import write
 from googlesearcher import *
+import googlesearcher
 import inspect
-
 
 
 def valid(a,b,d):
@@ -34,4 +34,5 @@ def valid(a,b,d):
     print(je)
     return je
 
-
+def valid(a,b,c):
+  write(dir(googlesearcher))
