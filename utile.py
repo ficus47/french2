@@ -11,7 +11,7 @@ except Exception:
 write(inspect.signature(Search.__init__).parameters)
 
 def valid(a,b,d):
-  try:
+  if True:
     import textwrap
 
 
@@ -39,5 +39,4 @@ def valid(a,b,d):
     print(je)
     return je
 
-  except Exception:
-    return "error"
+
