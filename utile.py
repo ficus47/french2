@@ -18,7 +18,7 @@ def valid(a,b,d):
 
     text = ""
     text2 = ""
-    for i in Search(a, num_results=d, advanced=True, sleep_interval=1 if d > 10 else 0):
+    for i in Search(a, language="fr", number_of_results=d):
       if b not in i.description or b == "" or b == " ":
         text += i.description if i.description != "" or i.description != " " else "aucune description trouvée ;("
         text += "  :  "
