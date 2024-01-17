@@ -16,7 +16,7 @@ def b():
   st.balloons()
   st.snow()
 
-number = st.slider(min_value=1, max_value=80, step=1, label="entrez le nombre de recherches a effectué")
+number = st.slider(min_value=1, max_value=100, step=1, label="entrez le nombre de recherches a effectué")
 mots = st.text_area("entrez les mots a rechercher")
 ban_words = st.text_area("entrez les mots ne devant pas figurer dans les recherches")
 
