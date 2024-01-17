@@ -12,8 +12,8 @@ def valid(a,b,d):
 
     text = ""
     text2 = ""
-    write(Google.search(a, language="fr", number_of_results=d))
-    for i in Google.search(a, language="fr", number_of_results=d):
+    write(Google.search(a, number_of_results=d))
+    for i in Google.search(a, lnumber_of_results=d):
       if b not in i.description or b == "" or b == " ":
         text += i.description if i.description != "" or i.description != " " else "aucune description trouvée ;("
         text += "  :  "
