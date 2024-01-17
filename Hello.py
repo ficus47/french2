@@ -10,7 +10,7 @@ except Exception:
   st.write(dir(googlesearch))
 
 def f(a, b, c):
-  for i in valid(a, b, c):
+  for i in valid(a, b, c).split("~"):
       st.write(i)
 
 
