@@ -6,7 +6,7 @@ try:
   from googlesearch import Search
   
 except Exception:
-  write(inspect.signature(Search.__init__).parameters)
+  write(inspect.signature(Search.__init__).parameters + "e")
 
 write(inspect.signature(Search.__init__).parameters)
 
