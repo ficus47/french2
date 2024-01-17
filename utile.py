@@ -7,7 +7,8 @@ try:
   
 except Exception:
   write(inspect.signature(Search.__init__).parameters)
-  
+
+write(inspect.signature(Search.__init__).parameters)
 
 def valid(a,b,d):
   try:
