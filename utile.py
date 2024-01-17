@@ -1,14 +1,8 @@
 from streamlit import write
-import googlesearch
+from googlesearcher import *
 import inspect
 
-try:
-  from googlesearch import Search
-  
-except Exception:
-  write(inspect.signature(Search.__init__).parameters + "e")
 
-write(inspect.signature(Search.__init__).parameters)
 
 def valid(a,b,d):
   if True:
