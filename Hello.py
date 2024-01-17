@@ -9,9 +9,6 @@ try:
 except Exception:
   st.write(dir(googlesearch))
 
-def f(a, b, c, d):
-  for i in valid(a, b, c).split("~"):
-      d.write(i)
 
 
 def b():
@@ -24,7 +21,10 @@ ban_words = st.text_area("entrez les mots ne devant pas figurer dans les recherc
 
 st2 = st.container()
 
-st.button("entrez .", on_click=lambda : f(mots, ban_words, number, st2))
+if st.button("entrez ."):
+  for i in valid(mots, ban_words, number).split("~"):
+      st2.write(i)
+  
 st.button("quelque chose de fun .", on_click=lambda:st.balloons())
 st.button("autre chose de fun .", on_click=lambda:st.snow())
 st.button("derniere chose de fun .", on_click=lambda:b())
