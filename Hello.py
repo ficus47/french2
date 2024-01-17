@@ -19,15 +19,15 @@ number = st.slider(min_value=1, max_value=100, step=1, label="entrez le nombre d
 mots = st.text_area("entrez les mots a rechercher")
 ban_words = st.text_area("entrez les mots ne devant pas figurer dans les recherches")
 
-st2 = st.container()
 
-if st.button("entrez ."):
-  for i in valid(mots, ban_words, number).split("+++++++"):
-      st2.write(i)
   
 st.button("quelque chose de fun .", on_click=lambda:st.balloons())
 st.button("autre chose de fun .", on_click=lambda:st.snow())
 st.button("derniere chose de fun .", on_click=lambda:b())
 
+st2 = st.container()
 
+if st.button("entrez ."):
+  for i in valid(mots, ban_words, number).split("+++++++"):
+      st2.write(i)
 
