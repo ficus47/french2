@@ -13,7 +13,7 @@ def valid(a,b,d):
     text = ""
 
 
-    for i in Google.earch(a, num=str(d)):
+    for i in Google.search(a, num=str(d)):
       if b not in i.title or b == "" or b == " ":
         text += i.title if i.title != "" or i.title != " " else "aucune description trouvée ;("
         text += "  :  "
