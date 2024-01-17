@@ -11,6 +11,7 @@ except Exception:
 
 def f(a, b, c):
     st.write(valid(a, b, c))
+    st.write("la mort)
 
 def b():
   st.balloons()
