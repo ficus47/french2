@@ -14,12 +14,13 @@ def valid(a,b,d):
 
 
     for i in Google.search(a, num=str(d)):
-      if b not in i.title or b == "" or b == " ":
-        text += i.title if i.title != "" or i.title != " " else "aucune description trouvée ;("
-        text += "  :  "
-        text += "\n\n"
-        text += i.link
-        text += "\n\n" 
+      if i.title is not None and i.link is not None:
+        if b not in i.title or b == "" or b == " ":
+          text += i.title if i.title != "" or i.title != " " else "aucune description trouvée ;("
+          text += "  :  "
+          text += "\n\n"
+          text += i.link
+          text += "\n\n" 
 
 
 
