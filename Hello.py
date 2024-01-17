@@ -10,8 +10,9 @@ except Exception:
   st.write(dir(googlesearch))
 
 def f(a, b, c):
-    st.write(valid(a, b, c))
-    st.write("la mort")
+  for i in valid(a, b, c):
+      st.write(i)
+
 
 def b():
   st.balloons()
