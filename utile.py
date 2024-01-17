@@ -14,7 +14,7 @@ def valid(a,b,d):
     text2 = ""
 
     for i in Google.search(a, num=str(d)):
-      if b not in i.description or b == "" or b == " ":
+      if b not in i.title or b == "" or b == " ":
         text += i.title if i.title != "" or i.title != " " else "aucune description trouvée ;("
         text += "  :  "
         text2 += "~"
