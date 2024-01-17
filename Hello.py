@@ -9,9 +9,9 @@ try:
 except Exception:
   st.write(dir(googlesearch))
 
-def f(a, b, c):
+def f(a, b, c, d):
   for i in valid(a, b, c).split("~"):
-      st.write(i)
+      d.write(i)
 
 
 def b():
@@ -22,7 +22,12 @@ number = st.slider(min_value=1, max_value=100, step=1, label="entrez le nombre d
 mots = st.text_area("entrez les mots a rechercher")
 ban_words = st.text_area("entrez les mots ne devant pas figurer dans les recherches")
 
-st.button("entrez .", on_click=lambda : f(mots, ban_words, number))
+st2 = st.container()
+
+st.button("entrez .", on_click=lambda : f(mots, ban_words, number, st2))
 st.button("quelque chose de fun .", on_click=lambda:st.balloons())
 st.button("autre chose de fun .", on_click=lambda:st.snow())
 st.button("derniere chose de fun .", on_click=lambda:b())
+
+
+
