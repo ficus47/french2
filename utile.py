@@ -15,10 +15,10 @@ def valid(a,b,d):
 
     for i in Google.search(a, num=str(d)):
       if b not in i.description or b == "" or b == " ":
-        text += i.description if i.description != "" or i.description != " " else "aucune description trouvée ;("
+        text += i.title if i.title != "" or i.title != " " else "aucune description trouvée ;("
         text += "  :  "
         text2 += "~"
-        text2 += i.url
+        text2 += i.link
         text2 += "\n\n" 
 
 
