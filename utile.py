@@ -21,6 +21,7 @@ def valid(a,b,d):
           text += "\n\n"
           text += i.link
           text += "\n\n" 
+          text += "~"
 
 
 
