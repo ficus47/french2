@@ -16,7 +16,7 @@ def valid(a, b, d, c):
     for i in Google.search(a, num=str(d)):
       if i.title is not None and i.link is not None:
         if (b.strip() not in i.title and (b != "" or b != " ")) or b == "" or b == " ":
-          if (c in i.link or c == "toute extensions")
+          if (c in i.link or c == "toute extensions"):
             text += i.title if i.title != "" or i.title != " " else "aucune description trouvée ;("
             text += "  :  "
             text += "\n\n"
