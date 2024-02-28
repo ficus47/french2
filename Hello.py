@@ -45,7 +45,7 @@ def answer(question):
   try:
     answer = answer_element.text
   except Exception:
-    answer = answer_element
+    answer = None
 
   return answer
 
@@ -78,6 +78,9 @@ st2 = st.container()
 
 
 def clicker():
+  if answer(mots) != None:
+    st2.write(answer(mots))
+    
   st2.write(valid(mots, ban_words, number, extent))
 
 
