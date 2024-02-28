@@ -38,7 +38,7 @@ def answer(question):
   if answer_element is not None:
     answer = answer_element.text
   else:
-    answer = "Je ne sais pas."
+    answer = None
 
   return answer
 
@@ -76,7 +76,7 @@ def valid(a, b, d, c):
     if answer(a) != None:
       return [text, answer(a)]
     else text:
-    return text
+      return text
 
 
 
