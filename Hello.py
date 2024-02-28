@@ -42,6 +42,7 @@ a = valid(mots, ban_words, number, extent).split("+++++++")
 if type(a) == list:
   st.write(a[1])
   a = a[0]
+a = a.split("+++++++")
 
 if x:
   for i in a:
