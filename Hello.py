@@ -80,7 +80,7 @@ st.button("derniere chose de fun .", on_click=lambda:b())
 def clicker():
   st2 = st.container()
   if answer(mots) != None:
-    st2.write(answer(mots))
+    st2.write("**"+answer(mots)+"**")
   for i in valid(mots, ban_words, number, extent).split("+++++++"):
     st2.write(i)
 
