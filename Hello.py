@@ -39,6 +39,7 @@ x = st.button("entrez .")
 st2 = st.container()
 
 a = valid(mots, ban_words, number, extent).split("+++++++")
+st.write(a)
 try:
   st.write(a[1])
 except Exception:
