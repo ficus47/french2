@@ -85,4 +85,5 @@ def clicker():
     st2.write(i)
 
 
-st.button("entrez .", on_click=clicker())
+if st.button("entrez ."):
+  clicker()
