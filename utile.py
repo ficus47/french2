@@ -73,7 +73,7 @@ def valid(a, b, d, c):
 #
 #
 #
-    return text
+    return [text, answer(a)]if answer(a) != None else text
 
 
 

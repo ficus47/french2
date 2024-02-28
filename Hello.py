@@ -38,7 +38,12 @@ st.button("derniere chose de fun .", on_click=lambda:b())
 x = st.button("entrez .")
 st2 = st.container()
 
+a = valid(mots, ban_words, number, extent).split("+++++++")
+if type(a) == list:
+  st.write(a[1])
+  a = a[0]
+
 if x:
-  for i in valid(mots, ban_words, number, extent).split("+++++++"):
+  for i in a:
       st2.write(i)
 
