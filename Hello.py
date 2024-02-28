@@ -47,10 +47,10 @@ if x:
     st2.write(a[1])
   except Exception:
     pass
-
+  st2.write(a[0])
   c = a[0].split("+++++++")
 
-  st2.write(a[0])
+  
 
   #for i in c:
     #st2.write(i)
