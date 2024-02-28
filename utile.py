@@ -75,7 +75,7 @@ def valid(a, b, d, c):
 #
     if answer(a) != None:
       return [text, answer(a)]
-    else text:
+    else :
       return text
 
 
