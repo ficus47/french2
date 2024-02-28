@@ -50,4 +50,3 @@ a = a[0].split("+++++++")
 if x:
   for i in a:
       st2.write(i)
-
