@@ -13,7 +13,7 @@ def answer(question):
       question (str): La question à poser.
 
   Returns:
-      str: La réponse à la question, ou "Je ne sais pas" si aucune réponse n'est trouvée.
+      str: La réponse à la question, ou None si aucune réponse n'est trouvée.
   """
 
   # Encodage de la question pour l'URL
@@ -35,12 +35,12 @@ def answer(question):
   answer_element = soup.find(class_="hgKElc")
 
   # Extraction du texte de la réponse
-  if answer_element is not None and answer_element.text != "":
-    answer = answer_element.text
-  else:
-    answer = None
+  #if answer_element is not None and answer_element.text != "":
+    #answer = answer_element.text
+  #else:
+    #answer = None
 
-  return answer
+  return answer_element.text
 
 def valid(a, b, d, c):
   if True:
