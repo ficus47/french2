@@ -40,7 +40,7 @@ st2 = st.container()
 
 def clicker():
   pass
-  st2.Write(valid(mots, ban_words, number, extent))
+  st2.write(valid(mots, ban_words, number, extent))
   #try:
     #st2.write(a[1])
   #except Exception:
