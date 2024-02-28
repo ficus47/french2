@@ -42,7 +42,6 @@ st2 = st.container()
 
 if x:
   a = valid(mots, ban_words, number, extent).split("+++++++")
-  st2.write(a)
 
   try:
     st2.write(a[1])
@@ -50,7 +49,6 @@ if x:
     pass
 
   c = a[0].split("+++++++")
-
 
   for i in c:
     st2.write(i)
