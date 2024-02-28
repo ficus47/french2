@@ -45,8 +45,8 @@ try:
 except Exception:
   pass
 
-a = a[0].split("+++++++")
+c = a[0].split("+++++++")
 
 if x:
-  for i in a:
-      st2.write(i)
+  for i in c:
+    st2.write(i)
