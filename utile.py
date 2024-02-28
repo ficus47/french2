@@ -35,7 +35,7 @@ def answer(question):
   answer_element = soup.find(class_="hgKElc")
 
   # Extraction du texte de la réponse
-  if answer_element is not None:
+  if answer_element is not None and answer_element.text != "":
     answer = answer_element.text
   else:
     answer = None
