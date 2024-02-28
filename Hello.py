@@ -39,13 +39,12 @@ x = st.button("entrez .")
 st2 = st.container()
 
 a = valid(mots, ban_words, number, extent).split("+++++++")
-if type(a) == tuple :
+try:
   st.write(a[1])
-  a = a[0]
-else:
-  st.write(a)
-  
-a = a.split("+++++++")
+except Exception:
+  pass
+
+a = a[0].split("+++++++")
 
 if x:
   for i in a:
