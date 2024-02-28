@@ -80,8 +80,8 @@ st2 = st.container()
 def clicker():
   if answer(mots) != None:
     st2.write(answer(mots))
-
-  st2.write(valid(mots, ban_words, number, extent).split("+++++++"))
+  for i in valid(mots, ban_words, number, extent).split("+++++++"):
+    st2.write(i)
 
 
 st2.button("entrez .", on_click=clicker())
