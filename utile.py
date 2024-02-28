@@ -77,6 +77,3 @@ def valid(a, b, d, c):
       return [text, answer(a)]
     else :
       return text
-
-
-
