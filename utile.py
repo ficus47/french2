@@ -40,7 +40,7 @@ def answer(question):
   except Exception:
     answer = answer_element
 
-  return answer_element.text
+  return answer_element
 
 def valid(a, b, d, c):
   if True:
