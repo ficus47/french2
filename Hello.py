@@ -44,6 +44,7 @@ if type(a) == tuple :
   a = a[0]
 else:
   st.write(a)
+  
 a = a.split("+++++++")
 
 if x:
