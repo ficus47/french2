@@ -38,8 +38,7 @@ st.button("derniere chose de fun .", on_click=lambda:b())
 x = st.button("entrez .")
 st2 = st.container()
 
-a = valid(mots, ban_words, number, extent).split("+++++++")
-st2.write(a)
+
 
 if x:
   a = valid(mots, ban_words, number, extent).split("+++++++")
