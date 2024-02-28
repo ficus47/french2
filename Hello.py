@@ -82,7 +82,7 @@ def clicker():
   if answer(mots) != None:
     st2.write("**"+answer(mots)+"**")
   x = valid(mots, ban_words, number, extent).split("+++++++")
-  for i in len(x):
+  for i in range(len(x)):
     st2.write(x[i])
 
 
