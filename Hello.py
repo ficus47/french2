@@ -39,7 +39,7 @@ x = st.button("entrez .")
 st2 = st.container()
 
 a = valid(mots, ban_words, number, extent).split("+++++++")
-if type(a) == list:
+if type(a) == list and len(a) == 2 and number != 2:
   st.write(a[1])
   a = a[0]
 a = a.split("+++++++")
