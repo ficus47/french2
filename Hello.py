@@ -50,5 +50,7 @@ if x:
 
   c = a[0].split("+++++++")
 
+  st2.write(a[0])
+
   for i in c:
     st2.write(i)
