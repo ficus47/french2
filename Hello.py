@@ -74,14 +74,15 @@ extent = st.selectbox("choisisez l'extension : ", [
 st.button("quelque chose de fun .", on_click=lambda:st.balloons())
 st.button("autre chose de fun .", on_click=lambda:st.snow())
 st.button("derniere chose de fun .", on_click=lambda:b())
-st2 = st.container()
+
 
 
 def clicker():
+  st2 = st.container()
   if answer(mots) != None:
     st2.write(answer(mots))
   for i in valid(mots, ban_words, number, extent).split("+++++++"):
     st2.write(i)
 
 
-st2.button("entrez .", on_click=clicker())
+st.button("entrez .", on_click=clicker())
